@@ -1,0 +1,42 @@
+# For bucketing_policy.jar:
+# args[1] --> name of jar file
+# args[2] --> number of classes of observations
+# args[3] --> performance penalty for non-functional observations
+# args[4] --> name of label file
+# args[5] --> name of distance file
+
+# M_E_1
+Since there is 1 class of observation (K=1), there is no need for mitigation
+
+# M_E_2
+java -jar schmit_deterministic.jar 2 0.5 files/fun_label_mod_exp_2.csv files/fun_distance_mod_exp_2.csv
+
+# M_E_3
+java -jar schmit_deterministic.jar 2 0.5 files/fun_label_mod_exp_3.csv files/fun_distance_mod_exp_3.csv
+
+# M_E_4
+java -jar schmit_deterministic.jar 4 0.5 files/fun_label_mod_exp_4.csv files/fun_distance_mod_exp_4.csv
+
+# M_E_5
+java -jar schmit_deterministic.jar 23 0.5 files/fun_label_mod_exp_5.csv files/fun_distance_mod_exp_5.csv 
+
+# M_E_6
+java -jar schmit_deterministic.jar 40 0.5 files/fun_label_mod_exp_6.csv files/fun_distance_mod_exp_6.csv
+
+# B_L_1
+java -jar schmit_deterministic.jar 4 0.5 files/fun_label_B_L_1.csv files/fun_distance_B_L_1.csv
+
+# B_L_2
+java -jar schmit_deterministic.jar 8 0.5 files/fun_label_B_L_2.csv files/fun_distance_B_L_2.csv
+
+# B_L_3
+java -jar schmit_deterministic.jar 16 0.5 files/fun_label_B_L_3.csv files/fun_distance_B_L_3.csv 
+
+# B_L_4
+java -jar schmit_deterministic.jar 32 0.5 files/fun_label_B_L_4.csv files/fun_distance_B_L_4.csv 
+
+# B_L_5
+java -jar schmit_deterministic.jar 64 0.5 files/fun_label_B_L_5.csv files/fun_distance_B_L_5.csv
+
+# B_L_6
+java -jar schmit_deterministic.jar 125 0.5 files/fun_label_B_L_6.csv files/fun_distance_B_L_6.csv 

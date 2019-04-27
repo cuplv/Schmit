@@ -1,0 +1,12 @@
+# For functional Clustering:
+# args[1] --> name of input file
+# args[2] --> 0 for derivative=0 and 1 for derivative 1
+# args[3] --> 'kl','lp','fdata','pca','deriv','fourier','hshift','basis'
+# args[4] --> 1) norm = '0', '1', '2' only if args[3] is one of 'lp', 'fdata', 'deriv' 
+#             2) nderiv = 0...n only if args[3] is one 'deriv', 'basis'
+# args[5] --> the epsilon indistinguishably
+# args[6] --> 'kmean' or 'hclust'
+# args[7] --> 0 = do not write label to output, 1 = write the label to output
+
+# overview
+Rscript functional_clustering.R Examples/results_overview_time.txt.csv 0 lp 1 50.0 hclust 1

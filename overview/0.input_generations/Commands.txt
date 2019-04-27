@@ -1,0 +1,3 @@
+javac overview.java 
+java overview > results
+java -jar convet_to_functionalData.jar overview_time.txt

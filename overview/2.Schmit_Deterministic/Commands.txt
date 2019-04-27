@@ -1,0 +1,9 @@
+# For functional Clustering:
+# args[1] --> name of jar file
+# args[2] --> number of classes of observations
+# args[3] --> performance penalty for non-functional observations
+# args[4] --> name of label file
+# args[5] --> name of distance file
+
+# overview policy generations for bucketing algorithm
+java -jar schmit_deterministic.jar 10 0.6 fun_label_overview.csv.csv fun_distance_overview.csv.csv
