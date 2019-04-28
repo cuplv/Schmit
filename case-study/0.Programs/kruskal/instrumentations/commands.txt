@@ -1,0 +1,4 @@
+# Instrumentations
+java -javaagent:callRecord-0.1.jar=empty,dummy,bblock -cp kruskal.jar kruskal.Kruskal > tmp
+java -cp callRecord-0.1.jar stac.discriminer.parser.parserInteger raw_data_results.txt
+java -jar convert_to_callData.jar results_raw_data_results.txt.csv 40 max 1 1,200,5

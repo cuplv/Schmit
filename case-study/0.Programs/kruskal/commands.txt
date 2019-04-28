@@ -1,0 +1,6 @@
+# Note that timing measurements should be done on NUC5i5RYH machine
+# measure timing for a combination of secret/public inputs
+java -jar kruskal.jar > kruskal_time.csv
+# convert the timing data to a vector of time each for a secret value
+java -jar convet_to_functionalData.jar kruskal_time.csv
+# Go to the inside of instrumentations folder for extracting program internal features

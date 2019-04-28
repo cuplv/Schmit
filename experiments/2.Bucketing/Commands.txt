@@ -40,6 +40,36 @@ java -jar bucketing_policy.jar 23 0.5 files/pws_label_mod_exp_5.csv files/pws_di
 Rscript Bucketing_functional_clustering.R files/results_mod_exp_5.txt.csv 0 lp 1 250.0 hclust 0 5.783,10.4803,21.1508
 
 # M_E_6
-java -jar bucketing_policy.jar 40 0.5 files/pws_label_mod_exp_6.csv files/pws_distance_mod_exp_6.csv
+java -jar bucketing_policy.jar 40 1.0 files/pws_label_mod_exp_6.csv files/pws_distance_mod_exp_6.csv
 
-?? Rscript Bucketing_functional_clustering.R files/results_mod_exp_6.txt.csv 0 lp 0 10.0 hclust 0 14.2882681459022,32.5765090525981
+Rscript Bucketing_functional_clustering.R files/results_mod_exp_6.txt.csv 0 lp 1 380.0 hclust 0 15.7293493404465,32.5765090525981
+
+# B_L_1
+java -jar bucketing_policy.jar 4 1.5 files/fun_label_B_L_1.csv files/fun_distance_B_L_1.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_1.txt.csv 0 lp 0 10.0 hclust 0 104.43676,104.43676
+
+# B_L_2
+java -jar bucketing_policy.jar 8 1.5 files/fun_label_B_L_2.csv files/fun_distance_B_L_2.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_2.txt.csv 0 lp 0 10.0 hclust 0 206.47250354,206.47250354
+
+# B_L_3
+java -jar bucketing_policy.jar 16 1.5 files/fun_label_B_L_3.csv files/fun_distance_B_L_3.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_3.txt.csv 0 lp 0 20.0 hclust 0 385.62235816,385.62235816
+
+# B_L_4
+java -jar bucketing_policy.jar 32 1.5 files/fun_label_B_L_4.csv files/fun_distance_B_L_4.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_4.txt.csv 0 lp 0 20.0 hclust 0 793.03905506,793.03905506
+
+# B_L_5
+java -jar bucketing_policy.jar 64 1.5 files/fun_label_B_L_5.csv files/fun_distance_B_L_5.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_5.txt.csv 0 lp 0 20.0 hclust 0 1609.01137262,1609.01137262
+
+# B_L_6
+java -jar bucketing_policy.jar 125 1.0 files/fun_label_B_L_6.csv files/fun_distance_B_L_6.csv
+
+Rscript Bucketing_functional_clustering.R files/results_BL_6.txt.csv 0 lp 0 20.0 hclust 0 2855.035914,6255.092585

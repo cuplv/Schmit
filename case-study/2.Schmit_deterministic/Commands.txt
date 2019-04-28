@@ -1,0 +1,15 @@
+# For bucketing_policy.jar:
+# args[1] --> name of jar file
+# args[2] --> number of classes of observations
+# args[3] --> performance penalty for non-functional observations
+# args[4] --> name of label file
+# args[5] --> name of distance file
+
+# GabFeed (micro-seconds)
+java -jar schmit_deterministic.jar 34 0.5 files/fun_label_results_gabfeed.csv files/fun_distance_results_gabfeed.csv
+
+# Java Verbal Expressions
+java -jar schmit_deterministic.jar 9 0.5 files/fun_label_results_verb_time.csv files/fun_distance_results_verb_time.csv 
+
+# Kruskal (nano-seconds)
+java -jar schmit_deterministic.jar 20 0.5 files/fun_label_results_kruskal_time.csv files/fun_distance_results_kruskal_time.csv

@@ -1,0 +1,7 @@
+# Run Gabfeed on the instrumented version (produce basic block calls)
+# this might take long time to finish!
+java -cp gabfeed.jar -javaagent:callRecord-0.1.jar=empty,callGenerator,bblock gab_feed1_ver4.gab_feed1 call
+# Convert each trace to one row in the CSV file
+java -cp callRecord-0.1.jar stac.discriminer.parser.parserInteger raw_data_results.txt
+# Convert each feature to a functional feature over the public inputs
+java -jar convert_to_callData.jar results_gabfeed.csv 65 poly 2 0,4096,64
