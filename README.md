@@ -5,7 +5,7 @@ The goal of SCHMIT is to improve the security based on entropy measure (such as 
 
 SCHMIT consists of three components: 1) Initial Security Analysis, 2) Mitigation policy Synthesis, 3) Enforcement of mitigation policy.
 
-<center><img src="Schmit.png" width="700" height="300"></center>
+<center><img src="Schmit.png"></center>
 <br>
 
 ## SCHMIT Overview
@@ -58,7 +58,7 @@ cd ../3.Mitigation
 ```
 #### step (3.1)
 Instrumentation-optional:
-# see the commands.txt inside the folder (1.instrumentations) to instrument overview example. 
+See the commands.txt inside the folder (1.instrumentations) to instrument overview example. 
 This step provides the basic block calls for each secret value. We provide the output file of this step for the next steps (Feel free to skip).
 
 #### step (3.2)
