@@ -91,4 +91,4 @@ Rscript functional_clustering.R Examples/results_mitigated_time.txt.csv 0 lp 1 5
 ```
 This step first converts the mitigated time measurement to functional data. Then, it applies the clustering algorithm to the mitigated time measurements.
 
-Note: For precise time measurements of step (0) and (3.3, please use the NUC machine.
+Note: For precise time measurements of step (0) and (3.3), please use the NUC machine.
