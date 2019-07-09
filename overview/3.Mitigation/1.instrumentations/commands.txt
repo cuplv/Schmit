@@ -1,5 +1,4 @@
 javac overview.java
-java overview > tmp.out
 java -javaagent:callRecord-0.1.jar=empty,modExp,bblock overview
 # convert auxiliary features for each secret inputs
 java -cp callRecord-0.1.jar stac.discriminer.parser.parserInteger raw_data_results.txt

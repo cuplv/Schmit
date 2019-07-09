@@ -1,0 +1,44 @@
+# First, please run the following commands to prepare the environment for Gurobi
+export GUROBI_HOME="/opt/gurobi811/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+
+# (optional) if you want, you can generate all the source codes for different file, for example:
+python regex.py B_L_1_test 4 0.5 files/fun_distance_B_L_1.csv  files/fun_label_B_L_1.csv
+# Note that B_L_4, B_L_5, and B_L_6 are slightly different and require tighter bounds and an extra parameter.
+
+# M_E_1
+No need for mitigations
+
+# M_E_2
+gurobi.sh Mod_exp_2_2_0.5.py
+
+# M_E_3
+gurobi.sh Mod_exp_3_2_0.5.py
+
+# M_E_4
+gurobi.sh Mod_exp_4_4_0.5.py
+
+# M_E_5
+gurobi.sh Mod_exp_5_23_0.5.py
+
+# M_E_6
+gurobi.sh Mod_exp_6_40_0.5.py
+
+# B_L_1
+gurobi.sh B_L_1_4_0.5.py
+
+# B_L_2
+gurobi.sh B_L_2_8_0.5.py
+
+# B_L_3
+gurobi.sh B_L_3_16_0.5.py
+
+# B_L_4
+gurobi.sh B_L_4_32_0.5.py
+
+# B_L_5
+gurobi.sh B_L_5_64_0.5.py
+
+# B_L_6
+gurobi.sh B_L_6_125_0.5.py

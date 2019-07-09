@@ -1,0 +1,3 @@
+# To obtain decision tree model for overview example
+python Classify.py --filename final_overview_classifications.csv --output overview_tree
+dot -Tpng overview_tree_tree0.dot -o tree.png

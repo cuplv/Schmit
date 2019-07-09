@@ -1,4 +1,0 @@
-# Note that timing measurements should be done on NUC5i5RYH machine
-java -jar ver-exp.jar > verb_time.txt
-# convert the timing data to a vector of time each for a secret value
-java -jar convet_to_functionalData.jar verb_time.txt

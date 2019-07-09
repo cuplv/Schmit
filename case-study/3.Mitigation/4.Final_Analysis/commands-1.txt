@@ -8,8 +8,14 @@
 # args[6] --> 'kmean' or 'hclust'
 # args[7] --> 0 = do not write label to output, 1 = write the label to output
 
-# GabFeed (milli-seconds to seconds)
-Rscript functional_clustering.R Examples/results_gabfeed_time.csv 0 lp 1 6500.0  hclust 1
+# GabFeed
+Rscript functional_clustering.R Examples/results_gabfeed_time_mitigated.txt.csv 0 lp 1 6500.0  hclust 0
+
+# Java Verbal Expressions
+Rscript functional_clustering.R Examples/results_verbal_time_mitigated.txt.csv 0 lp 1 150.0 hclust 0
+
+# Kruskal
+Rscript functional_clustering.R Examples/results_kruskal_mitigated_time.txt.csv 0 lp 1 300000.0 hclust 0
 
 # jetty
 Rscript functional_clustering.R Examples/results_jetty_time.csv 0 lp 1 100.0 hclust 1

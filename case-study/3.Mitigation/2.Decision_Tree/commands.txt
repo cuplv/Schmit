@@ -1,0 +1,12 @@
+# Gabfeed
+python Classify.py --filename gabfeed/gabfeed_final.csv --output gabfeed/gabfeed_tree
+dot -Tpng gabfeed/gabfeed_tree_tree0.dot -o gabfeed/gabfeed_tree0.png
+# We notice that there are many features that correlated in GabFeed
+# We use correlation analysis and produce gabfeed_final_after_corr_analysis.csv file
+# This file has only one representative from each set of correlated feature
+# This file can be used instead of gabfeed_final.csv for learning decision tree
+python Classify.py --filename gabfeed/gabfeed_final_after_corr_analysis.csv --output gabfeed/gabfeed_corr_tree
+
+# jetty
+python Classify.py --filename jetty/jetty_final.csv --output jetty/jetty_tree
+dot -Tpng jetty/jetty_tree_tree0.dot -o jetty/tree0.png

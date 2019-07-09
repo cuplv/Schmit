@@ -1,5 +1,7 @@
-# Note that timing measurements should be done on NUC5i5RYH machine
+# Note that timing measurements should be done on NUC5i5RYH machine (this step for time measurement).
+# Please download the following file and put it inside this directory:
+https://drive.google.com/file/d/1Qv0u7FOyO1dWs1tF5Ek_xSlvgmGC7Vvo/view?usp=sharing
 java -jar gabfeed.jar time > gabfeed_time.csv
 # convert the timing data to a vector of time each for a secret value
 java -jar convet_to_functionalData.jar gabfeed_time.csv
-# Go to the inside of instrumentations folder for extracting program internal features
+# Go to the inside of instrumentations folder for extracting program internal features.

@@ -1,0 +1,2 @@
+javac overview.java
+java -javaagent:mitigation-monitor.jar=empty,modExp,bblock overview > mitigated_time_new.txt

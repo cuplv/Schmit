@@ -1,0 +1,6 @@
+# Run the instrumented version of jetty and obtain basic block calls
+java -cp jetty.jar -javaagent:callRecord-0.1.jar=empty,dummy,bblock jetty.Password
+# convert each trace to one row in CSV file with basic block features
+java -cp callRecord-0.1.jar stac.discriminer.parser.parserInteger raw_data_results.txt
+# convert the set of traces for a secret value to a functional trace over public input
+java -jar convert_to_callData.jar results_raw_data_results.txt.csv 635 min_func 1 1,635,1

@@ -27,22 +27,22 @@ Rscript Bucketing_functional_clustering.R files/results_mod_exp_2.txt.csv 0 lp 0
 # M_E_3
 java -jar bucketing_policy.jar 2 1.0 files/pws_label_mod_exp_3.csv files/pws_distance_mod_exp_3.csv
 
-Rscript Bucketing_functional_clustering.R files/results_mod_exp_3.txt.csv 0 lp 0 4.0 hclust 0 3.73063436574812,3.73063436574812
+Rscript Bucketing_functional_clustering.R files/results_mod_exp_3.txt.csv 0 lp 0 5.0 hclust 0 3.73063436574812,3.73063436574812
 
 # M_E_4
 java -jar bucketing_policy.jar 4 1.0 files/pws_label_mod_exp_4.csv files/pws_distance_mod_exp_4.csv 
 
-Rscript Bucketing_functional_clustering.R files/results_mod_exp_4.txt.csv 0 lp 0 4.0 hclust 0 7.73518528869209,7.73518528869209
+Rscript Bucketing_functional_clustering.R files/results_mod_exp_4.txt.csv 0 lp 0 5.0 hclust 0 7.73518528869209,7.73518528869209
 
 # M_E_5
 java -jar bucketing_policy.jar 23 0.5 files/pws_label_mod_exp_5.csv files/pws_distance_mod_exp_5.csv
 
-Rscript Bucketing_functional_clustering.R files/results_mod_exp_5.txt.csv 0 lp 1 250.0 hclust 0 5.783,10.4803,21.1508
+Rscript Bucketing_functional_clustering.R files/results_mod_exp_5.txt.csv 0 lp 0 10.0 hclust 0 6.4322,11.6336,21.1508
 
 # M_E_6
 java -jar bucketing_policy.jar 40 1.0 files/pws_label_mod_exp_6.csv files/pws_distance_mod_exp_6.csv
 
-Rscript Bucketing_functional_clustering.R files/results_mod_exp_6.txt.csv 0 lp 1 380.0 hclust 0 15.7293493404465,32.5765090525981
+Rscript Bucketing_functional_clustering.R files/results_mod_exp_6.txt.csv 0 lp 0 20.0 hclust 0 8.76821641459972,15.7293493404465,32.5765090525981
 
 # B_L_1
 java -jar bucketing_policy.jar 4 1.5 files/fun_label_B_L_1.csv files/fun_distance_B_L_1.csv

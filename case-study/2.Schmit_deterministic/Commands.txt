@@ -5,11 +5,8 @@
 # args[4] --> name of label file
 # args[5] --> name of distance file
 
-# GabFeed (micro-seconds)
+# GabFeed
 java -jar schmit_deterministic.jar 34 0.5 files/fun_label_results_gabfeed.csv files/fun_distance_results_gabfeed.csv
 
-# Java Verbal Expressions
-java -jar schmit_deterministic.jar 9 0.5 files/fun_label_results_verb_time.csv files/fun_distance_results_verb_time.csv 
-
-# Kruskal (nano-seconds)
-java -jar schmit_deterministic.jar 20 0.5 files/fun_label_results_kruskal_time.csv files/fun_distance_results_kruskal_time.csv
+# jetty
+java -jar schmit_deterministic.jar 20 0.5 files/fun_label_results_jetty_time.csv.csv files/fun_distance_results_jetty_time.csv.csv

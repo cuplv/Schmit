@@ -1,0 +1,20 @@
+# First, please run the following commands to prepare the environment for Gurobi
+export GUROBI_HOME="/opt/gurobi811/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+
+# For bucketing_policy.jar:
+# args[1] --> name of jar file
+# args[2] --> number of classes of observations
+# args[3] --> performance penalty for non-functional observations
+# args[4] --> name of label file
+# args[5] --> name of distance file
+
+# (optional) if you want, you can generate all the source codes for different file, for GabFeed example:
+python regex.py gabfeed 34 0.5 files/fun_distance_results_gabfeed.csv  files/fun_label_results_gabfeed.csv
+
+# GabFeed
+gurobi.sh gabfeed_34_0.5.py
+
+# jetty
+gurobi.sh jetty_20_0.5.py
