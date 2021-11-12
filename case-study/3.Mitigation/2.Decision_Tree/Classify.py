@@ -1,5 +1,6 @@
 import numpy as np
-from sklearn import preprocessing, cross_validation, neighbors, tree
+from sklearn import preprocessing, neighbors, tree
+from sklearn.model_selection import cross_validate as cross_validation
 import pandas as pd
 import random
 from sklearn.tree import DecisionTreeClassifier
@@ -22,7 +23,7 @@ def tree_to_code(tree, feature_names):
         feature_names[i] if i != _tree.TREE_UNDEFINED else "undefined!"
         for i in tree_.feature
     ]
-    print "def tree({}):".format(", ".join(feature_names))
+    print("def tree({}):".format(", ".join(feature_names)))
     lst_name = []
     lst_val = []
     def recurse(node, depth):
@@ -44,7 +45,7 @@ def tree_to_code(tree, feature_names):
         else:
             val = ""
             len_name = len(lst_name)
-            for i in xrange(len_name):
+            for i in range(len_name):
                 if lst_val[i] > 0:
                     val += lst_name[i] + " <= " + str(abs(lst_val[i]))
                 else:
@@ -131,7 +132,6 @@ for x in X.T:
         if "y" in str(e):
             flag_contains = True
     if flag_contains:
-        print x
         le_fit = le.fit(x)
         arr = le.transform(x)
         XX.append(arr)
@@ -195,7 +195,7 @@ for i in range(3):
     print('Number of test data is ' + str(len(test_index)))
     print('Time of computation for tree ' + str(i) + ': ' + str(rTime))
     accuracy_max = 0
-    #tree_to_code(clf, list(df.drop(['label'],1).drop(['weight'],1).columns.values))
+    tree_to_code(clf, list(df.drop(['label'],1).drop(['weight'],1).columns.values))
 
 if(args.filename==None):
     print("\n The program generates three trees with highest accuracy. Please run: dot -Tpng Classification_results/" + filename +"_tree0.dot" + " -o tree.png to see the final decision tree. Please note that treen is tree0, tree1, or tree2. \n")
